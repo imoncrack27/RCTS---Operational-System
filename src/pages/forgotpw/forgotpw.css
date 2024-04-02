@@ -15,17 +15,7 @@
   right: 0;
   bottom: 0;
 }
-/* .illustration-bg-forgot {
-  border-radius: 0 0 59px 100px;
-  background: linear-gradient(
-    180deg,
-    rgba(27, 173, 222, 0.7),
-    rgba(9, 80, 115, 0)
-  );
-  width: 50px;
-  height: 500px;
-  transform: rotate(24.5deg);
-} */
+
 .img-human-forgot {
   position: absolute;
   top: -188.9px;
@@ -42,6 +32,7 @@
   width: 500px;
   text-align: left;
   transition: 0.15s;
+  text-decoration: none;
 }
 .link-back-login:hover {
   opacity: 0.6;

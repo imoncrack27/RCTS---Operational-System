@@ -10,7 +10,7 @@ const ForgotPass: FunctionComponent = () => {
           className="img-human-forgot"
           loading="lazy"
           alt=""
-          src="/Group 2.svg"
+          src="/Group 3.svg"
         />
       </div>
       <Link
@@ -31,8 +31,13 @@ const ForgotPass: FunctionComponent = () => {
         maxLength={11}
         className="phone-number-input"
         placeholder="Phone Number"
+        required
       />
-      <button className="button-forgot-password">Submit</button>
+      <Link to="/verifycode" style={{ textDecoration: "none" }}>
+        <button type="button" className="button-forgot-password">
+          Submit
+        </button>
+      </Link>
     </div>
   );
 };
