@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Login: FunctionComponent = () => {
   return (
-    <form className="login">
+    <div className="login">
       <section className="landing-page-parent">
         <div className="landing-page" />
         <div className="illustration-bg" />
@@ -58,7 +58,7 @@ const Login: FunctionComponent = () => {
               </label>
             </div>
           </div>
-          <Link to="#" className="forgot-password">
+          <Link to="/forgotpassword" className="forgot-password">
             Forgot password?
           </Link>
 
@@ -75,7 +75,7 @@ const Login: FunctionComponent = () => {
       <p className="signup-link">
         Don't have an account? <Link to="/signup">Sign Up</Link>
       </p>
-    </form>
+    </div>
   );
 };
 
