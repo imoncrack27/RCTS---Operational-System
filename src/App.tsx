@@ -10,7 +10,7 @@ const App: FunctionComponent = () => {
     <Routes>
       <Route path="/" Component={Dashboard} />
       <Route path="/login" Component={Login} />
-      <Route path="login/signup" Component={Signup} />
+      <Route path="/signup" Component={Signup} />
       {/* Other routes can be defined here */}
     </Routes>
   );

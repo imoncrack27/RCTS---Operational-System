@@ -7,8 +7,8 @@ const Signup: FunctionComponent = () => {
     <>
       <div className="signup">
         <section className="frame-parent2">
-          <img className="frame-child" alt="" src="/group-1.svg" />
-          <img className="circles-icon2" alt="" src="/circles.svg" />
+          <img className="frame-child" alt="" src="/Group 1.svg" />
+          <img className="circles-icon2" alt="" src="/Circles.svg" />
         </section>
         <div className="sign-up-prompt-parent">
           <div className="sign-up-prompt">
@@ -32,9 +32,9 @@ const Signup: FunctionComponent = () => {
                   placeholder="Username"
                   className="username"
                 ></input>
-                <div className="email1">
+                {/* <div className="email1">
                   <div className="mdieye" />
-                </div>
+                </div> */}
               </div>
               {/* <img
               className="mdieye-icon"
@@ -164,6 +164,7 @@ const Signup: FunctionComponent = () => {
               </Link>{" "}
               and
               <Link to="" className="Links">
+                {" "}
                 policy
               </Link>
             </label>
@@ -178,9 +179,7 @@ const Signup: FunctionComponent = () => {
               <div className="already-have-an-account-parent">
                 <p className="already-have-an">Already have an account? </p>
                 <div className="sign-in1">
-                  <Link to="/login" className="sign-in2">
-                    Login
-                  </Link>
+                  <Link to="/login">Sign in</Link>
                 </div>
               </div>
             </div>

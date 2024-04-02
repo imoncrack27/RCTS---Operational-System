@@ -26,9 +26,7 @@ const Login: FunctionComponent = () => {
 
       <div className="login-form">
         <div className="password-placeholder">
-          <label htmlFor="email" className="email">
-            Email
-          </label>
+          <label htmlFor="email" className="email"></label>
           <input
             id="email"
             className="form-fields-container1"
@@ -37,7 +35,7 @@ const Login: FunctionComponent = () => {
             required
           />
 
-          <div className="email">Password</div>
+          <div className="email"></div>
           <input
             id="password"
             className="form-fields-container"
@@ -75,7 +73,7 @@ const Login: FunctionComponent = () => {
       </button>
 
       <p className="signup-link">
-        Don't have an account? <Link to="./signup">Sign Up</Link>
+        Don't have an account? <Link to="/signup">Sign Up</Link>
       </p>
     </form>
   );
