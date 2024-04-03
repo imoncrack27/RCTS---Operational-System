@@ -88,13 +88,13 @@
   padding-right: 20px;
 }
 .form-fields-container {
-  border: 10px solid hsl(0%, 0%, 100%);
   outline: 0;
   background-color: transparent;
   align-self: stretch;
   height: 50px;
   border-radius: 5px;
   min-width: 210px;
+  margin-bottom: 0;
 }
 .email,
 .form-fields-container,
@@ -172,13 +172,13 @@
   gap: 11px;
 }
 .forgot-password {
-  position: relative;
   font-size: 14px;
-  font-family: Roboto;
+  font-family: roboto;
   color: #2c5282;
   text-align: left;
   display: inline-block;
   min-width: 112px;
+  text-decoration: none;
 }
 .frame-parent {
   align-self: stretch;
@@ -201,7 +201,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 28px;
+  gap: 10px;
   z-index: 4;
 }
 .login-to-your {
@@ -224,6 +224,14 @@
   left: 0;
   border-radius: 5px;
   background-color: #04c45c;
+  box-shadow: 5px 5px 2px #e2e2e2;
+  transition: 0.2s;
+}
+.login-button-child:hover {
+  opacity: 0.8;
+}
+.login-button-child:active {
+  opacity: 0.5;
 }
 .connect {
   position: relative;
@@ -289,17 +297,8 @@
   align-items: flex-start;
   justify-content: center;
   box-sizing: border-box;
-  z-index: 4;
-}
-
-.signup-link a {
-  font-size: 14px;
   text-decoration: none;
-  font-family: Roboto;
   color: #2c5282;
-}
-.signup-link p {
   font-size: 14px;
-  font-family: Roboto;
-  text-decoration: none;
+  font-family: roboto;
 }

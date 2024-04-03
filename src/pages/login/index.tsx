@@ -23,7 +23,6 @@ const Login: FunctionComponent = () => {
           <p className="scheduling">Scheduling</p>
         </span>
       </h1>
-
       <div className="login-form">
         <div className="password-placeholder">
           <label htmlFor="email" className="email"></label>
@@ -35,7 +34,7 @@ const Login: FunctionComponent = () => {
             required
           />
 
-          <div className="email"></div>
+          <label className="email"></label>
           <input
             id="password"
             className="form-fields-container"
@@ -71,10 +70,10 @@ const Login: FunctionComponent = () => {
         <div className="login-button-child" />
         <b className="connect">LOGIN</b>
       </button>
-
-      <p className="signup-link">
-        Don't have an account? <Link to="/signup">Sign Up</Link>
-      </p>
+      <Link to="/signup" className="signup-link">
+        Sign Up
+      </Link>
+      s
     </div>
   );
 };
