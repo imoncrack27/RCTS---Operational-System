@@ -459,8 +459,6 @@ body {
   border-radius: 50%;
   vertical-align: middle;
   border: 1px solid #ddd;
-  appearance: none;
-
   outline: none;
   cursor: pointer;
 }
@@ -515,14 +513,28 @@ body {
   gap: var(--gap-2xs);
   z-index: 1;
 }
-.login-button2 {
-  height: 15px;
-  width: 15px;
-  position: relative;
-  border-radius: 50%;
-  background-color: var(--color);
-  border: 0 solid var(--color-gainsboro);
+.signup-button2 {
+  cursor: pointer;
+  color: #fff;
+  padding: 15px 20px 7px;
+  background-color: #04c45c;
+  border-radius: 10px;
+  font-size: 25px;
+  font-family: roboto;
+  font-weight: 400;
+  min-width: 347px;
+  border: none;
   box-sizing: border-box;
+  text-decoration: none;
+  box-shadow: 5px 5px 4px #e2e2e2;
+
+  transition: 0.3s;
+}
+.signup-button2:hover{
+  opacity: 0.9;
+}
+.signup-button2:active{
+  opacity: 0.7;
 }
 .i-accept-the1 {
   color: var(--color2);
@@ -554,7 +566,7 @@ body {
   border-radius: 50%;
   vertical-align: middle;
   border: 1px solid #ddd;
-  appearance: none;
+  
 
   outline: none;
   cursor: pointer;
@@ -745,4 +757,23 @@ body {
   .frame-wrapper {
     padding-left: var(--padding-xl);
   }
+}
+
+
+.button-signup-container{
+  display: block;
+  margin: 50px 0 0 130px;
+
+  z-index:1;
+}
+.already-have-an-account-paragraph{
+  text-align: center;
+  font-family: inter;
+  font-weight: 100;
+}
+.already-have-an-account-login{
+   color:#2c5282;
+  height: 50px;
+  font-family: inter;
+  text-decoration: none;
 }

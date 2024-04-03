@@ -170,21 +170,21 @@ const Signup: FunctionComponent = () => {
             </label>
           </div>
         </div>
-        <div className="sign-in">
-          <div className="button-sign-up1">
-            <div className="button-sign-up2">
-              <b className="connect-signup ">SIGN IN</b>
-            </div>
-            <div className="frame-wrapper">
-              <div className="already-have-an-account-parent">
-                <p className="already-have-an">Already have an account? </p>
+        <div className="button-signup-container">
+          <Link to="/login">
+            {" "}
+            <button type="submit" className="signup-button2">
+              {/* Added type="submit" */}
+              SIGNUP
+            </button>
+          </Link>
 
-                <Link to="/login" className="sign-in1">
-                  Sign in
-                </Link>
-              </div>
-            </div>
-          </div>
+          <p className="already-have-an-account-paragraph">
+            Already have an account? &nbsp;{" "}
+            <Link to="/login" className="already-have-an-account-login">
+              Login
+            </Link>
+          </p>
         </div>
       </div>
     </>
