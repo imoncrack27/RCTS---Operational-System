@@ -178,9 +178,10 @@ const Signup: FunctionComponent = () => {
             <div className="frame-wrapper">
               <div className="already-have-an-account-parent">
                 <p className="already-have-an">Already have an account? </p>
-                <div className="sign-in1">
-                  <Link to="/login">Sign in</Link>
-                </div>
+
+                <Link to="/login" className="sign-in1">
+                  Sign in
+                </Link>
               </div>
             </div>
           </div>

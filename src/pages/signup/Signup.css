@@ -442,12 +442,11 @@ body {
   z-index: 2;
 }
 .Links {
-  
+  color:#2c5282;
+  height: 50px;
+  font-family: inter;
+  text-decoration: none;
 
-  color: #3e3eff;
-  
-  
-  
 }
 
 .i-accept-the {
@@ -643,10 +642,11 @@ body {
 .sign-in1 {
   justify-content: flex-start;
   padding: 0 var(--padding-6xs) 0 0;
-  color: #015fec;
-  display: inline-block;
+  color:   #2c5282;
+ 
   min-width: 30px;
   z-index: 5;
+  text-decoration: none;
 }
 .already-have-an-account-parent,
 .frame-wrapper,
@@ -657,7 +657,7 @@ body {
 }
 .already-have-an-account-parent {
   gap: 6px;
-  display: flex;
+
   position: relative;
 }
 .frame-wrapper {

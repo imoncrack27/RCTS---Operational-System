@@ -1,11 +1,11 @@
 import React, { FunctionComponent } from "react";
-import Signup from "./pages/signUp";
-import Login from "./pages/login";
-import Dashboard from "./pages/dashBoard";
+import Signup from "./pages/Signup";
+import Login from "./pages/Login";
+import Dashboard from "./pages/Dashboard";
 import { Routes, Route } from "react-router-dom";
-import ForgotPass from "./pages/forgotPassword";
+import ForgotPass from "./pages/ForgotPassword";
 import VerifyCode from "./pages/verifyCode";
-import SetPassword from "./pages/setPassword";
+import SetPassword from "./pages/SetPassword";
 
 const App: FunctionComponent = () => {
   return (
