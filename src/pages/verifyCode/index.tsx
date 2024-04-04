@@ -113,7 +113,7 @@ const VerifyCode: FunctionComponent = () => {
           onKeyUp={handleKeyUp}
         />
       </div>
-      <Link to="/verifycode" style={{ textDecoration: "none" }}>
+      <Link to="/setpassword" style={{ textDecoration: "none" }}>
         <button type="button" className="button-forgot-password">
           Submit
         </button>
