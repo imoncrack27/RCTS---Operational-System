@@ -10,7 +10,7 @@ const SetPassword: FunctionComponent = () => {
           className="img-human-forgot"
           loading="lazy"
           alt=""
-          src="/Group 3.svg"
+          src="/Group 4.svg"
         />
       </div>
 
