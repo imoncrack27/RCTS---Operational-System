@@ -11,6 +11,8 @@ import ForgotPass from "./pages/ForgotPassword";
 import VerifyCode from "./pages/verifyCode";
 import SetPassword from "./pages/SetPassword";
 import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/footer/Footer";
+import Menu from "components/menu/Menu";
 
 const App: FunctionComponent = () => {
   const Layout = () => {
@@ -18,8 +20,10 @@ const App: FunctionComponent = () => {
       <div className="main"></div>
       <Navbar />
       <div className="container">
-        <div className="menuContainer"></div>
-        <div className="menuContainer"></div>
+        <div className="menuContainer">
+          <Menu />
+        </div>
+        <div className="contentContainer"></div>
   <Footer />
       </div>
     
