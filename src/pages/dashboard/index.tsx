@@ -1,15 +1,8 @@
 import React, { FunctionComponent } from "react";
+import "./dashboard.css";
 
 const Dashboard: FunctionComponent = () => {
-  return (
-    <div>
-      dashboard
-      <br />
-      <br />
-      <br />
-      <button onClick={() => console.log("click")}>login</button>
-    </div>
-  );
+  return <div className="dashboard">dashboard</div>;
 };
 
 export default Dashboard;

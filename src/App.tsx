@@ -1,73 +1,88 @@
-import React, { FunctionComponent } from "react";
-import Signup from "./pages/Signup";
-import Login from "./pages/Login";
+import { RouterProvider, createBrowserRouter, Outlet } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import SummaryCount from "./pages/Dashboard/SummaryCount";
 import AppointmentList from "./pages/Dashboard/AppointmentList";
 import CreateAppointment from "./pages/Dashboard/CreateAppointment";
 import CalendarView from "./pages/Dashboard/CalendarView";
-import { Routes, Route, Link, RouterProvider, createBrowserRouter } from "react-router-dom";
+import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/footer/Footer";
+import Menu from "./components/menu/Menu";
+// Login, Signup, and ForgotPass are new imports
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 import ForgotPass from "./pages/ForgotPassword";
 import VerifyCode from "./pages/verifyCode";
 import SetPassword from "./pages/SetPassword";
-import Navbar from "./components/navbar/Navbar";
-import Footer from "./components/footer/Footer";
-import Menu from "components/menu/Menu";
 
-const App: FunctionComponent = () => {
+function App() {
   const Layout = () => {
     return (
-      <div className="main"></div>
-      <Navbar />
-      <div className="container">
-        <div className="menuContainer">
-          <Menu />
+      <div className="main">
+        <Navbar />
+        ``
+        <div className="container">
+          <div className="menuContainer">
+            <Menu />
+          </div>
+          <div className="contentContainer">
+            <Outlet />
+          </div>
         </div>
-        <div className="contentContainer"></div>
-  <Footer />
+        <Footer />
       </div>
-    
     );
   };
 
   const router = createBrowserRouter([
     {
       path: "/",
-      element: (
-       <Dashboard/>
-      ),
+      element: <Layout />,
+      children: [
+        {
+          path: "/dashboard",
+          element: <Dashboard />,
+        },
+        {
+          path: "/summary-count",
+          element: <SummaryCount />,
+        },
+        {
+          path: "/appointment-list",
+          element: <AppointmentList />,
+        },
+        {
+          path: "/create-appointment",
+          element: <CreateAppointment />,
+        },
+        {
+          path: "/calendar-view",
+          element: <CalendarView />,
+        },
+      ],
     },
-    
     {
-      path: "Summary Count",
-      element: <SummaryCount/>
+      path: "/login",
+      element: <Login />,
     },
     {
-      path: "List of Appointments",
-      element: <AppointmentList/>
+      path: "/signup",
+      element: <Signup />,
     },
     {
-      path: "Create Appointment",
-      element: <CreateAppointment/>
+      path: "/forgotpassword",
+      element: <ForgotPass />,
     },
     {
-      path: "Calendar View",
-      element: <CalendarView/>
+      path: "/verifycode",
+      element: <VerifyCode />,
+    },
+    {
+      path: "/setpassword",
+      element: <SetPassword />,
     },
   ]);
-  return (
-    <RouterProvider router ={router}
-    // <Routes>
-    //   <Route path="/" Component={Dashboard} />
-    //   <Route path="/login" Component={Login} />
-    //   <Route path="/signup" Component={Signup} />
-    //   <Route path="/forgotpassword" Component={ForgotPass} />
-    //   <Route path="/verifycode" Component={VerifyCode} />
-    //   <Route path="/setpassword" Component={SetPassword} />
 
-    //   {/* Other routes can be defined here */}
-    // </Routes>
-  );
-};
+  return <RouterProvider router={router} />;
+}
 
 export default App;
