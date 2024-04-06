@@ -62,14 +62,16 @@ const Login: FunctionComponent = () => {
               Forgot password?
             </Link>
 
-            {/* Changed div to anchor tag */}
+            {/* Changed div to Link */}
           </div>
         </div>
         <h1 className="login-to-your">Login to your account</h1>
         <button type="submit" className="login-button">
           {/* Added type="submit" */}
           <div className="login-button-child" />
-          <b className="connect">LOGIN</b>
+          <Link to="/" className="connect">
+            LOGIN
+          </Link>
         </button>
         <Link to="/signup" className="signup-link">
           Sign Up

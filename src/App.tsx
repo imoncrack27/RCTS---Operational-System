@@ -19,7 +19,6 @@ function App() {
     return (
       <div className="main">
         <Navbar />
-        ``
         <div className="container">
           <div className="menuContainer">
             <Menu />
@@ -43,19 +42,19 @@ function App() {
           element: <Dashboard />,
         },
         {
-          path: "/summary-count",
+          path: "/summarycount",
           element: <SummaryCount />,
         },
         {
-          path: "/appointment-list",
+          path: "/appointmentlist",
           element: <AppointmentList />,
         },
         {
-          path: "/create-appointment",
+          path: "/createappointment",
           element: <CreateAppointment />,
         },
         {
-          path: "/calendar-view",
+          path: "/calendarview",
           element: <CalendarView />,
         },
       ],
