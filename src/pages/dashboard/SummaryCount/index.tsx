@@ -1,7 +1,7 @@
-import React from "react";
+import "./summary-count.css";
 
 function SummaryCount() {
-  return <div></div>;
+  return <div className="summary-count-container">Summary Count</div>;
 }
 
 export default SummaryCount;

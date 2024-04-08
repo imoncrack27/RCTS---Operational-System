@@ -1,7 +1,7 @@
-import React from "react";
+import "./create-appointment.css";
 
 function CreateAppointment() {
-  return <div></div>;
+  return <div className="create-appointment-container">Create Appointment</div>;
 }
 
 export default CreateAppointment;
