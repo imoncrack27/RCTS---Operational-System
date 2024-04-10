@@ -115,10 +115,16 @@
 
 .box2,
 .box4 {
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 .box3,
 .box4 {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+}
+
+.new-total-employees {
+  display: grid;
+  flex: 1;
+  border: 1px solid #000040;
 }

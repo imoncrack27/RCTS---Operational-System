@@ -23,6 +23,7 @@ const Dashboard: FunctionComponent = () => {
           </h5>
         </div>
       </div>
+
       <div className="box">
         <div className="box1">
           <p>
@@ -46,12 +47,14 @@ const Dashboard: FunctionComponent = () => {
           </p>
         </div>
 
-        <h2>New Employee's</h2>
-        <h2>total Employee's</h2>
-
-        <div className="box2">Box 2</div>
+        <div className="box2">
+          <h2>New Employee's</h2>Box 2
+        </div>
         <div className="box3">Box 3</div>
-        <div className="box4">Box 4</div>
+
+        <div className="box4">
+          <h2>Total Employee's</h2>Box 4
+        </div>
       </div>
     </div>
   );
