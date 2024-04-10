@@ -128,3 +128,8 @@
   flex: 1;
   border: 1px solid #000040;
 }
+
+.box2 h2,
+.box4 h2 {
+  color: #343c6a;
+}
