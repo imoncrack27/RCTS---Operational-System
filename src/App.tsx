@@ -1,5 +1,5 @@
 import { RouterProvider, createBrowserRouter, Outlet } from "react-router-dom";
-import Dashboard from "./pages/Dashboard";
+import Dashboard from "./pages/Dashboard/Dashboard";
 import SummaryCount from "./pages/Dashboard/SummaryCount";
 import AppointmentList from "./pages/Dashboard/AppointmentList";
 import CreateAppointment from "./pages/Dashboard/CreateAppointment";
@@ -33,7 +33,7 @@ function App() {
       element: <Layout />,
       children: [
         {
-          path: "/dashboard",
+          path: "/",
           element: <Dashboard />,
         },
         {

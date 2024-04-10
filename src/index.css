@@ -17,11 +17,3 @@
   background-color: #e6f0fb;
   color: #0066ff;
 }
-.container {
-  display: flex;
-}
-
-.contentContainer {
-  padding: 5px 20px;
-  width: 100%;
-}
