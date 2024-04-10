@@ -30,11 +30,19 @@
   font-family: inter, arial;
   font-weight: 500;
   margin-left: 10px;
+  text-decoration: none;
+  color: #0066ff;
+}
+.dashboard-link:hover {
+  background-color: #aed7ff;
 }
 .faAngleDown {
   display: inline-block;
   align-items: center;
   vertical-align: middle;
+  margin-left: 5px;
+  color: hsl(0, 0%, 50%);
+  width: 10px;
 }
 .dashboard-dropdown {
   background-color: rgba(255, 255, 255, 1);
@@ -157,6 +165,18 @@
   width: 35px;
   cursor: pointer;
   transition: 0.15s;
+
+  span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ff0000;
+    color: #fff;
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 12px;
+  
+  }
 }
 .notifications:hover {
   background-color: #aed7ff;
@@ -168,6 +188,7 @@
   margin-left: 5px;
   width: 26px;
   height: 26px;
+  
 }
 .user {
     display: flex;

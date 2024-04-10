@@ -31,6 +31,7 @@ const Signup: FunctionComponent = () => {
                   type="text"
                   placeholder="Username"
                   className="username"
+                  required
                 ></input>
                 {/* <div className="email1">
                   <div className="mdieye" />
@@ -47,6 +48,7 @@ const Signup: FunctionComponent = () => {
                   type="password"
                   placeholder="Password"
                   className="password1"
+                  required
                 ></input>
                 <div className="sign-up-form-instance">
                   <div className="sign-up-form-instance-child" />
@@ -60,6 +62,7 @@ const Signup: FunctionComponent = () => {
                   type="email"
                   placeholder="Email"
                   className="username1"
+                  required
                 ></input>
                 <div className="email3">
                   <div className="email-child" />
@@ -76,6 +79,7 @@ const Signup: FunctionComponent = () => {
                   type="password"
                   placeholder="Confirm-password"
                   className="confirm-password1"
+                  required
                 ></input>
                 <div className="rectangle-parent">
                   <div className="frame-item" />
@@ -94,6 +98,7 @@ const Signup: FunctionComponent = () => {
                   pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
                   maxLength={11}
                   className="contact-number1"
+                  required
                 ></input>
                 <div className="contact-number2">
                   <div className="material-symbol-checked" />
@@ -104,6 +109,7 @@ const Signup: FunctionComponent = () => {
                   type="text"
                   placeholder="ID Number"
                   className="password3"
+                  required
                 ></input>
                 <div className="rectangle-group">
                   <div className="frame-inner" />
@@ -115,10 +121,8 @@ const Signup: FunctionComponent = () => {
                   type="text"
                   placeholder="Verify ID Number"
                   className="password5"
+                  required
                 ></input>
-                <div className="rectangle-container">
-                  <div className="rectangle-div" />
-                </div>
               </div>
               {/* <img
               className="material-symbolsverified-user-icon"
@@ -128,13 +132,13 @@ const Signup: FunctionComponent = () => {
             /> */}
             </div>
           </div>
-          <div className="labeled-checkbox">
+          <form className="labeled-checkbox">
             <input
               type="checkbox"
-              name="terms"
               title="terms"
               id="terms"
               className="terms"
+              required
             />
             <label htmlFor="terms" className="label-terms">
               I accept the general{" "}
@@ -148,27 +152,27 @@ const Signup: FunctionComponent = () => {
                 condition of use
               </Link>
             </label>
-
-            <input
-              type="checkbox"
-              name="privacy"
-              id="privacy"
-              title="privacy"
-              className="privacy-checkbox"
-            />
-            <label htmlFor="privacy" className="privacy-policy">
-              I accept the
-              <Link to="" className="Links">
-                {" "}
-                privacy{" "}
-              </Link>{" "}
-              and
-              <Link to="" className="Links">
-                {" "}
-                policy
-              </Link>
-            </label>
-          </div>
+            <form className="signup-second-checkbox">
+              <input
+                type="checkbox"
+                title="privacy"
+                className="privacy-checkbox"
+                required
+              />
+              <label htmlFor="privacy" className="privacy-policy">
+                I accept the
+                <Link to="" className="Links">
+                  {" "}
+                  privacy{" "}
+                </Link>{" "}
+                and
+                <Link to="" className="Links">
+                  {" "}
+                  policy
+                </Link>
+              </label>
+            </form>
+          </form>
         </div>
         <div className="button-signup-container">
           <Link to="/login">

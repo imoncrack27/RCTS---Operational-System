@@ -5,8 +5,7 @@ import AppointmentList from "./pages/Dashboard/AppointmentList";
 import CreateAppointment from "./pages/Dashboard/CreateAppointment";
 import CalendarView from "./pages/Dashboard/CalendarView";
 import Navbar from "./components/navbar/Navbar";
-import Footer from "./components/footer/Footer";
-import Menu from "./components/menu/Menu";
+
 // Login, Signup, and ForgotPass are new imports
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
@@ -20,14 +19,10 @@ function App() {
       <div className="main">
         <Navbar />
         <div className="container">
-          <div className="menuContainer">
-            <Menu />
-          </div>
           <div className="contentContainer">
             <Outlet />
           </div>
         </div>
-        <Footer />
       </div>
     );
   };

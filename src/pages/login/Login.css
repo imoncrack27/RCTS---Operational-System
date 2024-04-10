@@ -174,7 +174,7 @@
 .forgot-password {
   font-size: 14px;
   font-family: roboto;
-  color: #2c5282;
+  color: #6593cb;
   text-align: left;
   display: inline-block;
   min-width: 112px;
@@ -222,33 +222,31 @@
   right: 0;
   bottom: 0;
   left: 0;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #04c45c;
   box-shadow: 5px 5px 2px #e2e2e2;
   transition: 0.2s;
 }
 .login-button-child:hover {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 .login-button-child:active {
-  opacity: 0.5;
+  opacity: 0.4;
 }
 .connect {
   position: relative;
   font-size: 24px;
   display: inline-block;
-  font-family: Roboto;
+  font-family: inter;
   color: #fff;
-  text-align: left;
-  min-width: 70px;
   text-decoration: none;
   z-index: 1;
 }
 .login-button {
   cursor: pointer;
   border: 0;
-  padding: 15px 20px 7px;
-  background-color: transparent;
+  padding: 10px 20px;
+
   position: absolute;
   top: 642px;
   left: 176px;
@@ -299,7 +297,7 @@
   justify-content: center;
   box-sizing: border-box;
   text-decoration: none;
-  color: #2c5282;
+  color: #6593cb;
   font-size: 14px;
   font-family: roboto;
 }

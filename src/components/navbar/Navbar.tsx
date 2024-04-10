@@ -1,9 +1,16 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBell, faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+
 import "./navbar.css";
 
 const Navbar = () => {
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => setClick(!click);
+
   return (
     <div className="navbar">
       <div className="left-section">
@@ -14,13 +21,13 @@ const Navbar = () => {
         </span>
         <div className="dashboard-dropdown">
           <img src="dashboard.svg" className="dashboard-icon" alt="" />
-          <span className="dashboard-span">
-            Dashboard{" "}
+          <Link to="/" className="dashboard-span" onClick={handleClick}>
+            Dashboard
             <FontAwesomeIcon
               className="faAngleDown"
               icon={faAngleDown as IconProp}
             />
-          </span>
+          </Link>
         </div>
       </div>
 
@@ -45,7 +52,8 @@ const Navbar = () => {
 
       <div className="right-section">
         <button className="notifications" title="notifications">
-          <img src="bell-icon.svg" alt="" className="bell-icon" />
+          <img src="bell-icon.svg" alt="" className="bell-icon" />{" "}
+          <span>1</span>
         </button>
         <div className="user">
           <img src="user.jpg" className="user-image" alt="" />
