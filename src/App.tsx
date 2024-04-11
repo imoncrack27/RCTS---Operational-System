@@ -1,9 +1,9 @@
 import { RouterProvider, createBrowserRouter, Outlet } from "react-router-dom";
-import Dashboard from "./pages/Dashboard/Dashboard";
-import SummaryCount from "./pages/Dashboard/SummaryCount";
-import AppointmentList from "./pages/Dashboard/AppointmentList";
-import CreateAppointment from "./pages/Dashboard/CreateAppointment";
-import CalendarView from "./pages/Dashboard/CalendarView";
+import Dashboard from "./pages/dashboard/Dashboard";
+import SummaryCount from "./pages/dashboard/SummaryCount";
+import AppointmentList from "./pages/dashboard/AppointmentList";
+import CreateAppointment from "./pages/dashboard/CreateAppointment";
+import CalendarView from "./pages/dashboard/CalendarView";
 import Navbar from "./components/navbar/Navbar";
 
 // Login, Signup, and ForgotPass are new imports
