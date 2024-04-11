@@ -96,10 +96,11 @@ body {
   text-align: left;
   display: inline-block;
   width: 100%;
-  border: 1px solid;
+  border: 1px solid #717171;
   border-radius: 7px;
   padding: 15px ;
-  
+  outline: 1;
+  outline-color: #c3c3c3;
 }
 .mdieye {
   align-self: stretch;
@@ -144,9 +145,11 @@ body {
   text-align: left;
   display: inline-block;
   width: 100%;
-  border: 1px solid;
+  border: 1px solid #717171;
   border-radius: 7px;
   padding: 15px;
+  outline: 1;
+  outline-color: #c3c3c3;
 }
 .sign-up-form-instance-child {
   align-self: stretch;
@@ -198,10 +201,13 @@ body {
   text-align: left;
   display: inline-block;
   width: 100%;
-  border: 1px solid;
+  border: 1px solid #717171;
   border-radius: 7px;
   padding: 15px;
   font-family: inter;
+  font-size: 14px;
+  outline: 1;
+  outline-color: #c3c3c3;
 }
 .email-child {
   align-self: stretch;
@@ -241,7 +247,9 @@ body {
   font-family: inter;
   color: var(--color1);
   text-align: left;
-  border: 1px solid;
+  border: 1px solid #717171;
+  outline: 1;
+  outline-color: #c3c3c3;
   border-radius: 7px;
   padding: 15px;
   width: 100%;
@@ -313,7 +321,9 @@ body {
   text-align: left;
   display: inline-block;
   width: 100%;
-  border: 1px solid;
+  border: 1px solid #717171;
+  outline: 1;
+  outline-color: #c3c3c3;
   border-radius: 7px;
   padding: 15px;
 }
@@ -350,7 +360,9 @@ body {
   text-align: left;
   display: inline-block;
   width: 230px;
-  border: 1px solid;
+  border: 1px solid #717171;
+  outline: 1;
+  outline-color: #c3c3c3;
   border-radius: 7px;
   padding: 15px;
 }
@@ -392,7 +404,9 @@ body {
   text-align: left;
   display: inline-block;
   width: 230px;
-  border: 1px solid;
+  border: 1px solid #717171;
+  outline: 1;
+  outline-color: #c3c3c3;
   border-radius: 7px;
   padding: 15px;
 }

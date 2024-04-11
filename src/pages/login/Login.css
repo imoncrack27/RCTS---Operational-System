@@ -88,7 +88,10 @@
   padding-right: 20px;
 }
 .form-fields-container {
-  outline: 0;
+  outline: 1;
+  outline-color: #c3c3c3;
+
+  border: 1px solid #e2e8f0;
   background-color: transparent;
   align-self: stretch;
   height: 50px;
@@ -113,8 +116,9 @@
   padding-right: 20px;
 }
 .form-fields-container1 {
-  border: 10px solid hsl(0%, 0%, 100%);
-  outline: 0;
+  outline: 1;
+  outline-color: #c3c3c3;
+  border: 1px solid #e2e8f0;
   background-color: transparent;
   align-self: stretch;
   height: 50px;

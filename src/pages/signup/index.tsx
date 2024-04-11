@@ -33,16 +33,7 @@ const Signup: FunctionComponent = () => {
                   className="username"
                   required
                 ></input>
-                {/* <div className="email1">
-                  <div className="mdieye" />
-                </div> */}
               </div>
-              {/* <img
-              className="mdieye-icon"
-              loading="lazy"
-              alt=""
-              src="/mdieye.svg"
-            /> */}
               <div className="password-su">
                 <input
                   type="password"
