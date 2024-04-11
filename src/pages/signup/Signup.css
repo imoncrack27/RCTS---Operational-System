@@ -90,16 +90,17 @@ body {
 }
 .username {
   position: relative;
-  font-size: 12px;
+  font-size: 14px;
   font-family: inter;
   color: var(--color1);
   text-align: left;
   display: inline-block;
-  width: 200px;
-  border: 1px solid;
+  width: 100%;
+  border: 1px solid #717171;
   border-radius: 7px;
   padding: 15px ;
-  
+  outline: 1;
+  outline-color: #c3c3c3;
 }
 .mdieye {
   align-self: stretch;
@@ -143,10 +144,12 @@ body {
   color: var(--color1);
   text-align: left;
   display: inline-block;
-  width: 200px;
-  border: 1px solid;
+  width: 100%;
+  border: 1px solid #717171;
   border-radius: 7px;
   padding: 15px;
+  outline: 1;
+  outline-color: #c3c3c3;
 }
 .sign-up-form-instance-child {
   align-self: stretch;
@@ -197,11 +200,14 @@ body {
   color: var(--color1);
   text-align: left;
   display: inline-block;
-  width: 200px;
-  border: 1px solid;
+  width: 100%;
+  border: 1px solid #717171;
   border-radius: 7px;
   padding: 15px;
   font-family: inter;
+  font-size: 14px;
+  outline: 1;
+  outline-color: #c3c3c3;
 }
 .email-child {
   align-self: stretch;
@@ -241,10 +247,12 @@ body {
   font-family: inter;
   color: var(--color1);
   text-align: left;
-  border: 1px solid;
+  border: 1px solid #717171;
+  outline: 1;
+  outline-color: #c3c3c3;
   border-radius: 7px;
   padding: 15px;
-  width: 200px;
+  width: 100%;
 }
 .frame-item {
   align-self: stretch;
@@ -312,8 +320,10 @@ body {
   color: var(--color1);
   text-align: left;
   display: inline-block;
-  width: 200px;
-  border: 1px solid;
+  width: 100%;
+  border: 1px solid #717171;
+  outline: 1;
+  outline-color: #c3c3c3;
   border-radius: 7px;
   padding: 15px;
 }
@@ -339,6 +349,7 @@ body {
 }
 .contact-number {
   height: 69px;
+
   flex-direction: column;
 }
 .password3 {
@@ -348,8 +359,10 @@ body {
   color: var(--color1);
   text-align: left;
   display: inline-block;
-  width: 200px;
-  border: 1px solid;
+  width: 230px;
+  border: 1px solid #717171;
+  outline: 1;
+  outline-color: #c3c3c3;
   border-radius: 7px;
   padding: 15px;
 }
@@ -390,8 +403,10 @@ body {
   color: var(--color1);
   text-align: left;
   display: inline-block;
-  width: 200px;
-  border: 1px solid;
+  width: 230px;
+  border: 1px solid #717171;
+  outline: 1;
+  outline-color: #c3c3c3;
   border-radius: 7px;
   padding: 15px;
 }
@@ -442,7 +457,7 @@ body {
   z-index: 2;
 }
 .Links {
-  color:#2c5282;
+  color: #6593cb;
   height: 50px;
   font-family: inter;
   text-decoration: none;
@@ -461,6 +476,7 @@ body {
   border: 1px solid #ddd;
   outline: none;
   cursor: pointer;
+  margin-right: 8px;
 }
 .terms:checked {
   background-color: black;
@@ -468,22 +484,17 @@ body {
 .label-terms {
   color: var(--color-mediumslateblue);
   cursor: pointer;
-  padding: 10px;
-  margin: 0;
-  position: relative;
+  text-align: left;
   font-size: 14px;
-
   font-family: inter;
+  
 }
 .privacy-policy {
   color: var(--color-mediumslateblue);
   cursor: pointer;
-  padding: 10px;
+  padding: 8px;
   width: 50px;
-  position: relative;
-  align-items: flex-start;
   font-family: inter;
-  
   font-size: 14px;
 }
 .and {
@@ -516,25 +527,28 @@ body {
 .signup-button2 {
   cursor: pointer;
   color: #fff;
-  padding: 15px 20px 7px;
+  padding: 5px 20px;
   background-color: #04c45c;
-  border-radius: 10px;
-  font-size: 25px;
-  font-family: roboto;
+  border-radius: 13px;
+  font-size: 27px;
+  font-family: inter;
+  text-align: center;
+  vertical-align: middle;
   font-weight: 400;
   min-width: 347px;
   border: none;
   box-sizing: border-box;
   text-decoration: none;
   box-shadow: 5px 5px 4px #e2e2e2;
-
+  margin-top: -20px;
+  margin-bottom: 17px;
   transition: 0.3s;
 }
 .signup-button2:hover{
-  opacity: 0.9;
+  opacity: 0.6;
 }
 .signup-button2:active{
-  opacity: 0.7;
+  opacity: 0.4;
 }
 .i-accept-the1 {
   color: var(--color2);
@@ -569,6 +583,9 @@ body {
   outline: none;
   cursor: pointer;
 }
+.signup-second-checkbox {
+  margin-top: 20px;
+}
 .privacy-checkbox:checked {
   background-color: black;
 }
@@ -587,7 +604,7 @@ body {
 .signup-inner {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+
   max-width: 100%;
 }
 .sign-up-form-parent {
@@ -596,16 +613,12 @@ body {
   gap: 21px;
 }
 .labeled-checkbox {
-  position: relative;
-  display: inline-block;
-
   margin-left: 10px;
   margin-top: 50px;
+  z-index: 10;
 }
 
 .signup-inner {
-  width: 550px;
-  align-items: flex-start;
   padding: 0 3px var(--padding-mid);
   box-sizing: border-box;
   margin-left: 20px;
@@ -767,11 +780,12 @@ body {
 .already-have-an-account-paragraph{
   text-align: center;
   font-family: inter;
-  font-weight: 100;
+  font-weight: 500;
+  margin-top: 12px;
 }
 .already-have-an-account-login{
-   color:#2c5282;
-  height: 50px;
+   color: #6593cb;
+  vertical-align: middle;
   font-family: inter;
   text-decoration: none;
 }
