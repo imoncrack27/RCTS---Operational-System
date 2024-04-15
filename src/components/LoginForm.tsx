@@ -1,18 +1,51 @@
 import React from "react";
 import { LockOutlined, UserOutlined } from "@ant-design/icons";
 import { Button, Checkbox, Form, Input } from "antd";
+import type { FormInstance } from "antd";
 
-import { BsJustify } from "react-icons/bs";
+interface SubmitButtonProps {
+  form: FormInstance;
+}
 
-const LoginForm: React.FC = () => {
-  const onFinish = (values: any) => {
-    console.log("Received values of form: ", values);
-  };
+const SubmitButton: React.FC<React.PropsWithChildren<SubmitButtonProps>> = ({
+  form,
+  children,
+}) => {
+  const [submittable, setSubmittable] = React.useState<boolean>(false);
+
+  const values = Form.useWatch([], form);
+
+  React.useEffect(() => {
+    form
+      .validateFields({ validateOnly: true })
+      .then(() => setSubmittable(true))
+      .catch(() => setSubmittable(false));
+  }, [form, values]);
 
   const onClick = () => {
     console.log("clicked");
   };
 
+  return (
+    <Button
+      type="primary"
+      htmlType="submit"
+      className="login-form-button"
+      disabled={!submittable}
+      onClick={onClick}
+      href="/"
+      style={{ backgroundColor: "#04c45c" }}
+    >
+      {children}
+    </Button>
+  );
+};
+const LoginForm: React.FC = () => {
+  const onFinish = (values: any) => {
+    console.log("Received values of form: ", values);
+  };
+
+  const [form] = Form.useForm();
   return (
     <Form
       name="normal_login"
@@ -49,15 +82,7 @@ const LoginForm: React.FC = () => {
       </Form.Item>
 
       <Form.Item>
-        <Button
-          type="primary"
-          htmlType="submit"
-          className="login-form-button"
-          onClick={onClick}
-          style={{ backgroundColor: "#04c45c" }}
-        >
-          Log in
-        </Button>
+        <SubmitButton form={form}>Log in</SubmitButton>
 
         <a href="/signup" className="registration">
           Register now!
