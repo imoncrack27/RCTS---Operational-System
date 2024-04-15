@@ -1,307 +1,82 @@
-.illustration-bg,
-.landing-page {
-  position: absolute;
-  transform-origin: 0 0;
-}
-.landing-page {
-  top: 960.45px;
-  left: 478px;
-  background-color: #344293;
-  width: 1350px;
-  height: 884.7px;
+.login-container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100%;
   overflow: hidden;
-  transform: rotate(-65.69deg);
-}
-.illustration-bg {
-  top: -100px;
-  left: 905px;
-  border-radius: 0 0 59px 100px;
-  background: linear-gradient(
-    180deg,
-    rgba(27, 173, 222, 0.7),
-    rgba(9, 80, 115, 0)
-  );
-  width: 50px;
-  height: 750px;
-  transform: rotate(24.5deg);
-  z-index: 1;
-}
-.undraw-secure-login-pdn4-1-2 {
-  position: absolute;
-  top: 299px;
-  left: 733px;
-  width: 551px;
-  height: 421px;
-  overflow: hidden;
-  z-index: 2;
-}
-
-.circles-icon {
-  position: absolute;
-  top: 610px;
-  left: 0;
-  width: 1385px;
-  height: 268px;
-  z-index: 3;
-}
-.landing-page-parent {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.appointment,
-.scheduling {
-  margin: 0;
-}
-.appointment-scheduling-txt-container {
-  line-break: anywhere;
-  width: 100%;
-}
-.appointment-scheduling {
-  margin: 0;
-  position: absolute;
-  top: 99.7px;
-  left: 92.4px;
-  font-size: 64px;
-  line-height: 66px;
-  font-weight: 700;
-  font-family: Montserrat;
-  color: #095073;
-  text-align: left;
-  display: flex;
-  align-items: center;
-  width: 570.9px;
-  height: 119.7px;
-  z-index: 2;
-}
-.password {
-  width: 91px;
-  position: relative;
-  font-size: 16px;
-  font-family: Roboto;
-  color: #4a5568;
-  text-align: left;
-  display: inline-block;
-  box-sizing: border-box;
-  padding-right: 20px;
-}
-.form-fields-container {
-  outline: 1;
-  outline-color: #c3c3c3;
-
-  border: 1px solid #e2e8f0;
-  background-color: transparent;
-  align-self: stretch;
-  height: 50px;
-  border-radius: 5px;
-  min-width: 210px;
-  margin-bottom: 0;
-}
-.email,
-.form-fields-container,
-.form-fields-container1 {
-  position: relative;
-  box-sizing: border-box;
-  padding: 0 20px;
-}
-.email {
-  width: 60px;
-  font-size: 16px;
-  font-family: Roboto;
-  color: #4a5568;
-  text-align: left;
-  display: inline-block;
-  padding-right: 20px;
-}
-.form-fields-container1 {
-  outline: 1;
-  outline-color: #c3c3c3;
-  border: 1px solid #e2e8f0;
-  background-color: transparent;
-  align-self: stretch;
-  height: 50px;
-  border-radius: 5px;
-  min-width: 210px;
-}
-.password-placeholder {
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 11px;
-}
-.email-input,
-.johnsnowgmailcom {
-  position: absolute;
-  margin: 0 !important;
-  left: 20px;
-  font-size: 14px;
-  font-family: Roboto;
-  text-align: left;
-  z-index: 1;
-}
-
-.email-input {
-  bottom: 58px;
-  color: #000;
-  display: inline-block;
-  min-width: 55px;
-}
-.remember-me-checkbox,
-.checkbox {
-  height: 15px;
-  width: 15px;
-  position: relative;
-  border-radius: 999px;
-  background-color: #f7fafc;
-  box-sizing: border-box;
-}
-.remember-me {
-  position: relative;
-  font-size: 14px;
-  font-family: Roboto;
-  color: #2d3748;
-  text-align: left;
-  display: inline-block;
-  min-width: 92px;
-}
-.remember-me-label-parent {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 11px;
-}
-.forgot-password {
-  font-size: 14px;
-  font-family: roboto;
-  color: #6593cb;
-  text-align: left;
-  display: inline-block;
-  min-width: 112px;
-  text-decoration: none;
-}
-.frame-parent {
-  align-self: stretch;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 0 1px 0 0;
-  gap: 20px;
-}
-.login-form,
-.login-to-your {
-  position: absolute;
-  left: 174px;
-}
-.login-form {
-  top: 400px;
-  width: 350px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 10px;
-  z-index: 4;
-}
-.login-to-your {
-  margin: 0;
-  top: 341px;
-  font-size: 30px;
-  font-weight: 700;
-  font-family: Roboto;
-  color: #1a202c;
-  text-align: left;
-}
-.login-button-child {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  margin: 0 !important;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-radius: 10px;
-  background-color: #04c45c;
-  box-shadow: 5px 5px 2px #e2e2e2;
-  transition: 0.2s;
-}
-.login-button-child:hover {
-  opacity: 0.6;
-}
-.login-button-child:active {
-  opacity: 0.4;
-}
-.connect {
-  position: relative;
-  font-size: 24px;
-  display: inline-block;
-  font-family: inter;
-  color: #fff;
-  text-decoration: none;
-  z-index: 1;
-}
-.login-button {
-  cursor: pointer;
-  border: 0;
-  padding: 10px 20px;
-
-  position: absolute;
-  top: 642px;
-  left: 176px;
-  width: 347px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  box-sizing: border-box;
-  z-index: 4;
 }
 .login {
-  position: absolute;
+  position: relative;
+}
+.login-img {
   margin: 0;
   width: 100%;
   height: 100%;
-  background-color: #fff;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
-  overflow: hidden;
-  letter-spacing: normal;
 }
-@media screen and (max-width: 767px) {
-  .appointment-scheduling {
-    font-size: 51px;
-    line-height: 53px;
-  }
-  .login-to-your {
-    font-size: 24px;
-  }
-}
-@media screen and (max-width: 450px) {
-  .appointment-scheduling {
-    font-size: 38px;
-    line-height: 40px;
-  }
-  .login-to-your {
-    font-size: 18px;
-  }
-}
-.signup-link {
+
+.login-img img {
   position: absolute;
-  top: 700px;
-  left: 176px;
-  width: 347px;
+  right: 0;
+  top: 0;
+}
+.img-login {
+  width: 1200px;
+}
+
+.img-login2 {
+  height: 500px;
+  width: 700px;
+  margin-top: 200px;
+}
+.appointment-scheduling {
+  color: #095073;
+  padding-top: 100px;
+  margin-left: 150px;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 60px;
+  width: 200px;
+}
+.appointment-login {
+  font-weight: 700;
+  font-size: 30px;
+  margin-left: 200px;
+  margin-bottom: 50px;
+}
+
+.login-form-button {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   justify-content: center;
-  box-sizing: border-box;
-  text-decoration: none;
-  color: #6593cb;
-  font-size: 14px;
-  font-family: roboto;
+  align-items: center;
+  font-size: 25px;
+  padding: 20px;
+  width: 300px;
+  margin-left: 30px;
+}
+.forgot-password {
+  margin-left: 150px;
+}
+.registration {
+  margin-left: 140px;
+  color: #015fec;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 200px;
+  margin-top: 50px;
+}
+.login-form input {
+  width: 350px;
+  height: 30px;
+  font-size: 200px;
+}
+.login-checkbox {
+  margin: auto;
+}
+.login-form-forgot {
+  margin-left: 150px;
 }

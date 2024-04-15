@@ -1,83 +1,21 @@
-import { FunctionComponent } from "react";
+import React from "react";
+import LoginForm from "../../components/LoginForm"; // Update the import path to correctly reference the location of the LoginForm component
 import "./Login.css";
-import { Link } from "react-router-dom";
 
-const Login: FunctionComponent = () => {
+const Login = () => {
   return (
-    <>
+    <div className="login-container">
       <div className="login">
-        <section className="landing-page-parent">
-          <div className="landing-page" />
-          <div className="illustration-bg" />
-          <img
-            className="undraw-secure-login-pdn4-1-2"
-            loading="lazy"
-            alt=""
-            src="/human.svg"
-          />
-
-          <img className="circles-icon" alt="" src="/Circles.svg" />
-        </section>
-        <h1 className="appointment-scheduling">
-          <span className="appointment-scheduling-txt-container">
-            <p className="appointment">Appointment</p>
-            <p className="scheduling">Scheduling</p>
-          </span>
-        </h1>
-        <div className="login-form">
-          <div className="password-placeholder">
-            <label htmlFor="email" className="email"></label>
-            <input
-              id="email"
-              className="form-fields-container1"
-              type="email"
-              placeholder="Enter your email"
-              required
-            />
-
-            <label className="email"></label>
-            <input
-              id="password"
-              className="form-fields-container"
-              type="password"
-              placeholder="Enter your password"
-              required
-            />
-          </div>
-
-          <div className="frame-parent">
-            <div className="remember-me-label-parent">
-              <div className="remember-me-label-parent">
-                <input
-                  type="checkbox"
-                  id="remember-me"
-                  className="remember-me-label"
-                />
-                <label htmlFor="remember-me" className="remember-me">
-                  Remember me
-                </label>
-              </div>
-            </div>
-            <Link to="/forgotpassword" className="forgot-password">
-              Forgot password?
-            </Link>
-
-            {/* Changed div to Link */}
-          </div>
+        <h1 className="appointment-scheduling">Appointment Scheduling</h1>
+        <h3 className="appointment-login">Login to your Account</h3>
+        <div className="login-img">
+          <img src="login.png" className="img-login" alt="image" />
+          <img src="login-human.png" className="img-login2" alt="image" />
         </div>
-        <h1 className="login-to-your">Login to your account</h1>
-        <button type="submit" className="login-button">
-          {/* Added type="submit" */}
-          <div className="login-button-child" />
-          <Link to="/" className="connect">
-            LOGIN
-          </Link>
-        </button>
-        <Link to="/signup" className="signup-link">
-          Sign Up
-        </Link>
+
+        <LoginForm />
       </div>
-    </>
+    </div>
   );
 };
 
