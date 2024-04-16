@@ -21,14 +21,14 @@ const Signup = () => {
             <input
               type="username"
               title="username"
-              placeholder="username"
+              placeholder="Username"
               required
             />
-            <input type="email" title="email" placeholder="email" required />
+            <input type="email" title="email" placeholder="Email" required />
             <input
               type="tel"
               title="contact number"
-              placeholder="contact number"
+              placeholder="+63 "
               required
               maxLength={13}
               min={3}
@@ -45,13 +45,13 @@ const Signup = () => {
             <input
               type="password"
               title="password"
-              placeholder="password"
+              placeholder="Password"
               required
             />
             <input
               type="password"
               title="confirm password"
-              placeholder="confirm password"
+              placeholder="Confirm Password"
               required
             />
             <input
@@ -76,7 +76,11 @@ const Signup = () => {
             htmlType="submit"
             title="button"
             className="signup-button"
-            style={{ backgroundColor: "#04c45c" }}
+            style={{
+              backgroundColor: "#04c45c",
+              textDecoration: "none",
+            }}
+            href="/login"
             onClick={onclick}
           >
             Signup
