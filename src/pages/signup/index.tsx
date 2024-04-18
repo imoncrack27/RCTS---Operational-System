@@ -33,14 +33,7 @@ const Signup = () => {
               maxLength={13}
               min={3}
             />
-            <input
-              type="number"
-              title="verify ID number"
-              placeholder="Verify ID number"
-              required
-            />
           </form>
-
           <form className="signup-input">
             <input
               type="password"
@@ -60,6 +53,9 @@ const Signup = () => {
               placeholder="ID number"
               required
             />
+          </form>{" "}
+          <form className="signup-checkbox">
+            {" "}
             <Checkbox className="checkbox-signup">
               I accept the general terms and condition of use
             </Checkbox>
@@ -80,7 +76,6 @@ const Signup = () => {
               backgroundColor: "#04c45c",
               textDecoration: "none",
             }}
-            href="/login"
             onClick={onclick}
           >
             Signup

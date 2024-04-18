@@ -43,12 +43,12 @@
 }
 .forms-signup {
   display: flex;
-  flex: 1;
+  position: relative;
 }
 .input-signup {
-  float: left;
   margin-left: 100px;
 }
+
 .input-signup input {
   width: 300px;
   height: 40px;
@@ -57,13 +57,12 @@
   padding: 10px;
   display: block;
   margin: 30px 0;
-  outline: none;
+  outline-color: #62b0ff;
   font-family: "Inter", sans-serif;
   font-weight: 500;
+  opacity: 0.9;
 }
 .signup-input {
-  gap: 30px;
-  float: left;
   margin-left: 30px;
 }
 .signup-input input {
@@ -74,15 +73,25 @@
   padding: 10px;
   display: block;
   margin: 30px 0;
-  outline: none;
+  outline-color: #62b0ff;
   font-family: "Inter", sans-serif;
   font-weight: 500;
+  opacity: 0.9;
+}
+
+.signup-checkbox {
+  position: absolute;
+  right: 0;
+  left: 100px;
+  top: 230px;
 }
 .checkbox-signup {
+  margin-bottom: 10px;
 }
 .checkbox-signup2 {
 }
 .button-signup {
+  margin-top: 50px;
   margin-left: 300px;
 }
 .signup-button {
@@ -98,7 +107,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 60px;
   margin-bottom: 30px;
   width: 300px;
   font-size: 25px;

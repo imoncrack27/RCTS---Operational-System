@@ -33,7 +33,6 @@ const SubmitButton: React.FC<React.PropsWithChildren<SubmitButtonProps>> = ({
       className="login-form-button"
       disabled={!submittable}
       onClick={onClick}
-      href="/"
       style={{ backgroundColor: "#04c45c" }}
     >
       {children}
